@@ -7,11 +7,28 @@ function cacularPromedio() {
   var c4;
   var c5;
   var promedio;
-  //Hacer c1 = 10, c2 = 7.5, c3 = 9, c4 = 10, c5 = 10
-  c1 = 10
-  c2 = 7.5
-  c3 = 9
-  c4 = 10
-  c5 = 10
+  var cajaDeTexto = document.getElementById("calificacion1");
+ var texto = cajaDeTexto.value;
+  c1 = parseFloat(texto);
+
+  cajaDeTexto = document.getElementById("calificacion2");
+ texto = cajaDeTexto.value;
+  c2 = parseFloat(texto);
+
+  cajaDeTexto = document.getElementById("calificacion3")
+  texto = cajaDeTexto.value;
+  c3 = parseFloat(texto);
+
+  cajaDeTexto = document.getElementById("calificacion4");
+  texto = cajaDeTexto.value;
+  c4 = parseFloat(texto);
+
+  cajaDeTexto = document.getElementById("calificacion5");
+  texto = cajaDeTexto.value;
+  c5 = parseFloat(texto);
+  cajaDeTexto = document.getElementById("calificacion1")
+  texto = cajaDeTexto.value;
   
+  promedio= (c1 + c2 + c3 + c4 +c5) / 5;
+  alert("tu promedio es de: " + promedio)
 }
